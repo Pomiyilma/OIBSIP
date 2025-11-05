@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body%}
+<div class="container">
+  <h1> Welcome, {{username}}! </h1>
+  <p>💥🎈💥Congratulations, You logged in!💥🎈💥 Click on the link below for a wholesome surprise!</p>
+  <a href="{{url_for('static', filename='logged-in-surprise.mp4')}}">Surprise</a>
+  <a href="{{url_for('logout')}}" class="btn btn-logout">Logout</a>
+</div>
+{% endblock %}

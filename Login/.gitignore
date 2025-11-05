@@ -1,1 +1,4 @@
 flask-auth/
+__pycache__/
+*.pyc
+.vscode/
